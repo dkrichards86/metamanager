@@ -11,6 +11,9 @@ describe('Building tags', function() {
                 href: "base href",
                 target: "_blank"
             },
+            "meta": [
+                { name: "description", content: "content value" }
+            ],
             "title": "Test page title"
         }
     );

@@ -29,7 +29,7 @@ describe('Setting values', function() {
             title: "title does exist"
         }
     );
-    
+
     it('adds new tags', function() {
         test.assert(Object.keys(metaManager.tags).indexOf("title") != -1);
     });
