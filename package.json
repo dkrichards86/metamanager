@@ -1,6 +1,6 @@
 {
-  "name": "meta-manager",
-  "version": "1.0.0",
+  "name": "head-manager",
+  "version": "1.0.1",
   "description": "A tool for managing document head content.",
   "main": "./lib/index.js",
   "scripts": {
