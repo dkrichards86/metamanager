@@ -1,0 +1,33 @@
+{
+  "name": "meta-manager",
+  "version": "1.0.0",
+  "description": "A tool for managing document head content.",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "mocha test/import.js test/set.js test/dom.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dkrichards86/metamanager.git"
+  },
+  "keywords": [
+    "document",
+    "head",
+    "base",
+    "link",
+    "meta",
+    "script",
+    "title"
+  ],
+  "author": "Keith Richards",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dkrichards86/metamanager/issues"
+  },
+  "homepage": "https://github.com/dkrichards86/metamanager",
+  "devDependencies": {
+    "jsdom": "^9.8.0",
+    "mocha": "^3.0.2",
+    "unit.js": "^2.0.0"
+  }
+}
