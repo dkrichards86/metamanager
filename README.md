@@ -1,4 +1,7 @@
-Meta Manager is a tool for managing a page's head content.
+# MetaManager
+As modern search engines become more adept at rendering JavaScript, developers will 
+need a way to insert dynamic meta content for search engine optimization. Enter 
+MetaManager. MetaManager is a tool for managing a page's head content.
 
 ## Usage
 First initialize the tag object...
