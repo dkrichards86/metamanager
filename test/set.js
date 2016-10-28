@@ -16,7 +16,7 @@ describe('Setting values', function() {
     );
     
     it('applies individual tags', function() {
-        test.assert(Object.keys(metaManager.tags).indexOf("base") != -1);
+        test.assert(Object.keys(metaManager.tags).indexOf("base") !== -1);
     });
     
     it('applies tag arrays', function() {
@@ -31,7 +31,7 @@ describe('Setting values', function() {
     );
 
     it('adds new tags', function() {
-        test.assert(Object.keys(metaManager.tags).indexOf("title") != -1);
+        test.assert(Object.keys(metaManager.tags).indexOf("title") !== -1);
     });
     
     metaManager.setTags(
@@ -43,10 +43,22 @@ describe('Setting values', function() {
     );
     
     it('strips invalid tags', function() {
-         test.assert(Object.keys(metaManager.tags).indexOf("fake") == -1);
+         test.assert(Object.keys(metaManager.tags).indexOf("fake") === -1);
     });
     
     it('strips invalid tag key', function() {
-         test.assert(Object.keys(metaManager.tags['meta'][0]).indexOf("fake") == -1);
+         test.assert(metaManager.tags['meta'].indexOf("fake") === -1);
+    });
+    
+    metaManager.setTags(
+        {
+            "meta": [
+                { "fake": "shouldn't be here"}
+            ]
+        }
+    );
+    
+    it('doesnt add tags with missing required keys', function() {
+         test.assert(metaManager.tags['meta'].length === 0);
     });
 });
